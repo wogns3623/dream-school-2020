@@ -33,10 +33,6 @@ class App extends Component {
     });
   };
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if(nextState)
-  // }
-
   render() {
     return (
       <>
@@ -44,7 +40,7 @@ class App extends Component {
           isMobile={this.state.isMobile}
           handleTab={this.handleTab}
         ></Header>
-        <main className="App">
+        <main className={"App"} onClick={() => console.log("click")}>
           <div className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
             non quis exercitationem culpa nesciunt nihil aut nostrum explicabo
@@ -53,8 +49,8 @@ class App extends Component {
           </div>
         </main>
         <div className="swipe_btn_wrap">
-          <div className="swipe_btn_left">{"<"}</div>
-          <div className="swipe_btn_right">{">"}</div>
+          <div className="swipe_btn_left"></div>
+          <div className="swipe_btn_right"></div>
         </div>
         <Footer isMobile={this.state.isMobile}></Footer>
       </>
