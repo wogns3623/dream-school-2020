@@ -1,12 +1,24 @@
 import React, { Component } from "react";
 import Header from "component/Header";
 import Footer from "component/Footer";
+import Slider from "component/Slider";
+import swipeBtnLeft from "assets/images/common/arrow_left.png";
+import swipeBtnRight from "assets/images/common/arrow_right.png";
 import "style/App.css";
 
 class App extends Component {
   state = {
     isMobile: false,
-    currentTab: 0
+    currentTab: 0,
+    tabList: [
+      "HOME",
+      "꿈의학교란?",
+      "꿈의학교 Q&A",
+      "신청 및 심사일정",
+      "신청서 작성팁",
+      "사업설명회 일정",
+      "지역교육청 연락처"
+    ]
   };
 
   constructor() {
@@ -28,9 +40,12 @@ class App extends Component {
   }
 
   handleTab = index => {
-    this.setState({
-      currentTab: index
-    });
+    if (this.state.tabList.length > index && index >= 0) {
+      console.log(index);
+      this.setState({
+        currentTab: index
+      });
+    }
   };
 
   render() {
@@ -39,19 +54,12 @@ class App extends Component {
         <Header
           isMobile={this.state.isMobile}
           handleTab={this.handleTab}
+          currentTab={this.state.currentTab}
+          menuList={this.state.tabList}
         ></Header>
         <main className={"App"} onClick={() => console.log("click")}>
-          <div className="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-            non quis exercitationem culpa nesciunt nihil aut nostrum explicabo
-            reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
-            Voluptatum ducimus voluptates voluptas?
-          </div>
+          <Slider></Slider>
         </main>
-        <div className="swipe_btn_wrap">
-          <div className="swipe_btn_left"></div>
-          <div className="swipe_btn_right"></div>
-        </div>
         <Footer isMobile={this.state.isMobile}></Footer>
       </>
     );

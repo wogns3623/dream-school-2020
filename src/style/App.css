@@ -1,52 +1,22 @@
 .App {
-  background-color: #e8e500;
+  display: flex;
+  width: 100%;
+  margin: 0 auto 300px auto;
+}
+
+.tab_content {
+  flex: 0 0 100%;
+}
+.tab_content > article {
   width: 750px;
-  height: 1000px;
   margin: 0 auto;
-}
-
-.swipe_btn_left,
-.swipe_btn_right {
-  position: fixed;
-  top: 50%;
-  z-index: 1;
-
-  width: 70px;
-  height: 70px;
-
-  font-size: 150px;
-  cursor: pointer;
-}
-
-.swipe_btn_left {
-  background-image: url("../assets/images/common/arrow_left.png");
-  background-size: cover;
-  right: 50%;
-  margin-right: 400px;
-}
-.swipe_btn_right {
-  background-image: url("../assets/images/common/arrow_right.png");
-  background-size: cover;
-  left: 50%;
-  margin-left: 400px;
+  background-color: #e8e500;
+  height: 1100px;
 }
 
 @media screen and (max-width: 880px) {
   .App {
     width: 100%;
-    margin-top: 60px;
-  }
-
-  .swipe_btn_left,
-  .swipe_btn_right {
-    margin: 0px;
-  }
-  .swipe_btn_left {
-    right: auto;
-    left: 10px;
-  }
-  .swipe_btn_right {
-    left: auto;
-    right: 10px;
+    margin: 60px auto 60px auto;
   }
 }

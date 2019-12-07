@@ -1,29 +1,75 @@
 .header_mobile,
 .mobMenuBg,
-.closeBtn {
+.header_menu .closeBtn,
+.menu_item:first-child {
   display: none;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_logo {
+  height: 150px;
+}
+.header_sns {
+  height: 30px;
+}
+
+.menu_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 750px;
+}
+.menu_item {
+  flex: 0 0 249px;
+  padding: 10px 0;
+  border-right: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+  background-color: #000846;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+.menu_item:nth-child(3n + 1) {
+  border-right: none;
+}
+.menu_item.active {
+  background-color: #e8e500;
+  color: #000846;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 880px) {
+  header,
+  .menu_wrap,
+  .memu_item:first-child,
+  .header_menu .closeBtn {
+    display: block;
+  }
+
+  .header_logo,
+  .header_sns {
+    display: none;
+  }
+
   .header_mobile {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
+    height: 60px;
 
     background-color: white;
     box-shadow: 1px 0px 2px 1px #ccc;
   }
   .header_mobile .homeBtn,
   .header_mobile .menuBtn {
-    margin: 10px;
-  }
-
-  .header_logo,
-  .header_sns {
-    display: none;
+    margin: 0 10px;
   }
 
   .header_menu {
@@ -35,7 +81,7 @@
     height: 100%;
     background-color: #000846;
 
-    z-index: 2;
+    z-index: 3;
     color: white;
 
     transition-duration: 200ms;
@@ -43,8 +89,7 @@
   .header_menu.active {
     width: 70%;
   }
-  .closeBtn {
-    display: block;
+  .header_menu .closeBtn {
     margin: 15px 0 0 30px;
   }
   .mobMenuBg.active {
@@ -54,12 +99,29 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0.65) 99%,
       rgba(0, 0, 0, 0.65) 100%
     );
+  }
+
+  .menu_wrap {
+    width: auto;
+    margin: 20px 0 0 30px;
+  }
+  .menu_item {
+    width: fit-content;
+    padding: 10px 0;
+    border: none;
+    text-align: initial;
+    text-indent: 10px;
+    font-size: 15px;
+    color: white;
+  }
+  .menu_item:nth-child(3n + 1) {
+    border-right: none;
   }
 }

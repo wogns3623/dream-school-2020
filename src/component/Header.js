@@ -26,7 +26,19 @@ class Header extends Component {
             alt="menu close button"
             onClick={() => this.handleMenu(false)}
           ></img>
-          header_menu
+          <div className="menu_wrap">
+            {this.props.menuList.map((item, index) => (
+              <div
+                className={`menu_item${
+                  this.props.currentTab === index ? " active" : ""
+                }`}
+                onClick={() => this.props.handleTab(index)}
+                key={index}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div
@@ -46,7 +58,7 @@ class Header extends Component {
             className="btn menuBtn"
             src={menuBtn}
             alt="menu button"
-            width="40px"
+            width="44px"
             onClick={() => this.handleMenu(true)}
           ></img>
         </div>
