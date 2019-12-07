@@ -32,7 +32,10 @@ class Header extends Component {
                 className={`menu_item${
                   this.props.currentTab === index ? " active" : ""
                 }`}
-                onClick={() => this.props.handleTab(index)}
+                onClick={() => {
+                  this.handleMenu(false);
+                  this.props.handleTab(index);
+                }}
                 key={index}
               >
                 {item}

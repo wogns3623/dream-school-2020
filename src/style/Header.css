@@ -124,4 +124,9 @@ header {
   .menu_item:nth-child(3n + 1) {
     border-right: none;
   }
+  .menu_item.active {
+    background-color: initial;
+    color: white;
+    font-weight: initial;
+  }
 }

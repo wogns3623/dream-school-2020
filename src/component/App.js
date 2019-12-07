@@ -2,14 +2,13 @@ import React, { Component } from "react";
 import Header from "component/Header";
 import Footer from "component/Footer";
 import Slider from "component/Slider";
-import swipeBtnLeft from "assets/images/common/arrow_left.png";
-import swipeBtnRight from "assets/images/common/arrow_right.png";
 import "style/App.css";
 
 class App extends Component {
   state = {
     isMobile: false,
     currentTab: 0,
+    swiper: null,
     tabList: [
       "HOME",
       "꿈의학교란?",
@@ -38,13 +37,16 @@ class App extends Component {
       this.setState({ isMobile: currentIsMobile });
     }
   }
+  setSwiper = swiper => {
+    swiper.on("slideChange", () => {
+      this.setState({ currentTab: this.state.swiper.activeIndex });
+    });
+    this.setState({ swiper: swiper });
+  };
 
   handleTab = index => {
-    if (this.state.tabList.length > index && index >= 0) {
-      console.log(index);
-      this.setState({
-        currentTab: index
-      });
+    if (this.state.swiper !== null) {
+      this.state.swiper.slideTo(index);
     }
   };
 
@@ -57,8 +59,8 @@ class App extends Component {
           currentTab={this.state.currentTab}
           menuList={this.state.tabList}
         ></Header>
-        <main className={"App"} onClick={() => console.log("click")}>
-          <Slider></Slider>
+        <main className="App">
+          <Slider setSwiper={this.setSwiper}></Slider>
         </main>
         <Footer isMobile={this.state.isMobile}></Footer>
       </>
