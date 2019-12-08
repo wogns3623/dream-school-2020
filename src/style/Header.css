@@ -15,10 +15,13 @@ header {
 }
 .header_sns {
   height: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu_wrap {
   display: flex;
+
   flex-wrap: wrap;
   width: 750px;
 }
