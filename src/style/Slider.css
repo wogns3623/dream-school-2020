@@ -40,12 +40,13 @@
   transition-property: transform, -webkit-transform;
 }
 .swiper-slide > div {
+  display: flex;
+  flex-direction: column;
   width: 750px;
-  height: 1100px;
   margin: 0 auto;
   background-color: #e8e500;
+  /* background-color: blue; */
 }
-
 .swiper-button-prev,
 .swiper-button-next {
   position: fixed;
@@ -80,6 +81,10 @@
   .swiper-slide > div {
     width: 100%;
   }
+  .swiper-slide > div > * {
+    width: 100%;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     margin: 0px;
