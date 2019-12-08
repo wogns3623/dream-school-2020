@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import homeBtn from "assets/images/common/home_btn.png";
 import menuBtn from "assets/images/common/menu_btn.png";
 import closeBtn from "assets/images/common/menu_btn2.png";
+import logo from "assets/images/common/logo.png";
 import "style/Header.css";
+import { FacebookShareButton, TwitterShareButton } from "react-share";
+import { FacebookIcon, TwitterIcon } from "react-share";
+import { KaKaoTalkButton, FacebookCount } from "react-social-kr";
 
 class Header extends Component {
   state = {
@@ -17,8 +21,23 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="header_logo">header_logo</div>
-        <div className="header_sns">header_sns</div>
+        <div className="header_logo">
+          <img
+            className="btn homeBtn"
+            src={logo}
+            alt="home button"
+            width="100px"
+            onClick={() => this.props.handleTab(0)}
+          ></img>
+        </div>
+        <div className="header_sns">
+          <FacebookShareButton url={"www.google.com"}>
+            <FacebookIcon size={32} round={false} />
+          </FacebookShareButton>
+          <TwitterShareButton url={"www.google.com"}>
+            <TwitterIcon size={32} round={false} />
+          </TwitterShareButton>
+        </div>
         <div className={`header_menu${this.state.menuActive ? " active" : ""}`}>
           <img
             className="btn closeBtn"
