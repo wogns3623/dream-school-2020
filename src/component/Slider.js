@@ -6,7 +6,7 @@ import pageImg2 from "assets/images/page/info.png";
 import pageImg3_top from "assets/images/page/application.png";
 import pageImg3_bottom from "assets/images/page/numb.png";
 import pageImg4 from "assets/images/page/apptip.png";
-import pageImg5_top from "assets/images/page/info.png";
+import pageImg5_top from "assets/images/page/explain.png";
 import pageImg6_top from "assets/images/page/numt.png";
 import btnImg1 from "assets/images/page/app_.png";
 import btnImg2 from "assets/images/page/tip_.png";
@@ -70,13 +70,6 @@ class Slider extends Component {
         <div style={sliderWidth}>
           <div>
             <img src={pageImg5_top} alt="slide sixth page content" />
-            <div className="btn_wrap">
-              <img
-                className="btn applyBtn"
-                src={btnImg3}
-                alt="slide third page button"
-              />
-            </div>
           </div>
         </div>
 
