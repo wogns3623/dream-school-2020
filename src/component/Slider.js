@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
 import QnA from "component/QnA";
-import pageImg1 from "assets/images/page/01.jpg";
-import pageImg2 from "assets/images/page/02.jpg";
-import pageImg3_top from "assets/images/page/03_top.jpg";
-import pageImg3_bottom from "assets/images/page/03_bottom.jpg";
-import pageImg4 from "assets/images/page/04.jpg";
-import pageImg5_top from "assets/images/page/05_top.jpg";
-import pageImg6_top from "assets/images/page/06_top.jpg";
-import btnImg1 from "assets/images/page/2019_main_new_btn01.gif";
-import btnImg2 from "assets/images/page/2019_main_new_btn02.gif";
-import btnImg3 from "assets/images/page/2019_main_new_btn03.gif";
+import pageImg1 from "assets/images/page/main.png";
+import pageImg2 from "assets/images/page/info.png";
+import pageImg3_top from "assets/images/page/application.png";
+import pageImg3_bottom from "assets/images/page/numb.png";
+import pageImg4 from "assets/images/page/apptip.png";
+import pageImg5_top from "assets/images/page/info.png";
+import pageImg6_top from "assets/images/page/numt.png";
+import btnImg1 from "assets/images/page/app_.png";
+import btnImg2 from "assets/images/page/tip_.png";
+import btnImg3 from "assets/images/page/enter_.png";
 import "style/Slider.css";
 import "style/SlideItem.css";
 
@@ -39,7 +39,6 @@ class Slider extends Component {
         <div style={sliderWidth}>
           <div>
             <img src={pageImg1} alt="slide first page" />
-            <div className="bottom_page"></div>
           </div>
         </div>
 
@@ -59,14 +58,6 @@ class Slider extends Component {
         <div style={sliderWidth}>
           <div>
             <img src={pageImg3_top} alt="slide fourth page content" />
-            <div className="btn_wrap">
-              <img
-                className="btn applyBtn"
-                src={btnImg1}
-                alt="slide third page button"
-              />
-            </div>
-            <img src={pageImg3_bottom} alt="slide fourth page bottom" />
           </div>
         </div>
 
@@ -86,7 +77,6 @@ class Slider extends Component {
                 alt="slide third page button"
               />
             </div>
-            <img src={pageImg3_bottom} alt="slide sixth page bottom" />
           </div>
         </div>
 

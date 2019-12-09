@@ -4,7 +4,7 @@
 
 .btn_wrap {
   display: flex;
-  background-image: url("../assets/images/page/03_middle2.jpg");
+  background-image: url("../assets/images/page/nums.png");
 }
 .btn_wrap img {
   margin: 0 auto;
@@ -12,7 +12,7 @@
 
 .content_wrap {
   display: flex;
-  background-image: url("../assets/images/page/03_middle2.jpg");
+  background-image: url("../assets/images/page/nums.png");
   background-repeat: repeat-y;
 }
 .content_wrap div {
@@ -80,15 +80,15 @@ tbody td a {
 @media screen and (max-width: 880px) {
   .btn_wrap {
     background-size: cover;
-    background-image: url("../assets/images/page/03_middle.jpg");
+    background-image: url("../assets/images/page/nums.png");
   }
   .btn_wrap img {
-    width: 25%;
+    swidth: 25%;
   }
 
   .content_wrap {
     background-size: contain;
-    background-image: url("../assets/images/page/03_middle.jpg");
+    background-image: url("../assets/images/page/nums.png");
   }
 
   table {
