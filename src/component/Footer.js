@@ -9,7 +9,7 @@ class Footer extends Component {
       <footer>
         <ShareBox
           isMobile={this.props.isMobile}
-          iconWidth="30px"
+          iconWidth="40px"
           kakao="footer"
         ></ShareBox>
       </footer>
