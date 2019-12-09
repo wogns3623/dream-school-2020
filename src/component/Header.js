@@ -1,14 +1,11 @@
 import React, { Component } from "react";
+
+import ShareBox from "component/ShareBox.js";
 import homeBtn from "assets/images/common/home_btn.png";
 import menuBtn from "assets/images/common/menu_btn.png";
 import closeBtn from "assets/images/common/menu_btn2.png";
 import logo from "assets/images/common/logo.png";
 import "style/Header.css";
-import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { FacebookIcon, TwitterIcon } from "react-share";
-// import { KaKaoTalkButton, FacebookCount } from "react-social-kr";
-
-import ShareBox from "component/ShareBox.js";
 
 class Header extends Component {
   state = {
@@ -28,19 +25,16 @@ class Header extends Component {
             className="btn homeBtn"
             src={logo}
             alt="home button"
-            width="100px"
+            width="150px"
             onClick={() => this.props.handleTab(0)}
           ></img>
         </div>
         <div className="header_sns">
-          <FacebookShareButton url={"www.google.com"}>
-            <FacebookIcon size={32} round={false} />
-          </FacebookShareButton>
-          <TwitterShareButton url={"www.google.com"}>
-            <TwitterIcon size={32} round={false} />
-          </TwitterShareButton>
-
-          <ShareBox></ShareBox>
+          <ShareBox
+            isMobile={this.props.isMobile}
+            iconWidth="30px"
+            kakao="header"
+          ></ShareBox>
         </div>
         <div className={`header_menu${this.state.menuActive ? " active" : ""}`}>
           <img

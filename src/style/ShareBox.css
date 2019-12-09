@@ -1,0 +1,8 @@
+.sns_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sns_wrap .deactive {
+  display: none;
+}

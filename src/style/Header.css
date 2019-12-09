@@ -6,17 +6,19 @@
 }
 
 header {
+  width: 750px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .header_logo {
-  height: 150px;
+  align-self: center;
 }
 .header_sns {
+  width: 140px;
   height: 30px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 4px;
+  align-self: flex-end;
 }
 
 .menu_wrap {

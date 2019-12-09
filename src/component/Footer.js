@@ -1,22 +1,20 @@
-import React from "react";
-import "style/Footer.css";
-import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { FacebookIcon, TwitterIcon } from "react-share";
+import React, { Component } from "react";
 
-function Footer() {
-  return (
-    <footer>
-      <div>kakaotalk</div>
-      <div>kakaostory</div>
-      <div>band</div>
-      <FacebookShareButton url={"www.google.com"}>
-        <FacebookIcon size={32} round={false} />
-      </FacebookShareButton>
-      <TwitterShareButton url={"www.google.com"}>
-        <TwitterIcon size={32} round={false} />
-      </TwitterShareButton>
-    </footer>
-  );
+import ShareBox from "component/ShareBox.js";
+import "style/Footer.css";
+
+class Footer extends Component {
+  render() {
+    return (
+      <footer>
+        <ShareBox
+          isMobile={this.props.isMobile}
+          iconWidth="30px"
+          kakao="footer"
+        ></ShareBox>
+      </footer>
+    );
+  }
 }
 
 export default Footer;

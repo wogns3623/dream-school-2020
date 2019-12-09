@@ -23,6 +23,7 @@ class App extends Component {
   constructor() {
     super();
 
+    window.Kakao.init("b356a2e405bb3aa3e99097c3753002aa");
     window.addEventListener("resize", this.resize.bind(this));
   }
 
