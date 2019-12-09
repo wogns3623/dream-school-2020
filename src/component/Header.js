@@ -6,7 +6,9 @@ import logo from "assets/images/common/logo.png";
 import "style/Header.css";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 import { FacebookIcon, TwitterIcon } from "react-share";
-import { KaKaoTalkButton, FacebookCount } from "react-social-kr";
+// import { KaKaoTalkButton, FacebookCount } from "react-social-kr";
+
+import ShareBox from "component/ShareBox.js";
 
 class Header extends Component {
   state = {
@@ -37,6 +39,8 @@ class Header extends Component {
           <TwitterShareButton url={"www.google.com"}>
             <TwitterIcon size={32} round={false} />
           </TwitterShareButton>
+
+          <ShareBox></ShareBox>
         </div>
         <div className={`header_menu${this.state.menuActive ? " active" : ""}`}>
           <img

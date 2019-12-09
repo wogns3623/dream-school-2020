@@ -36,7 +36,7 @@ class QnA extends Component {
       <div className="qna_container">
         {qnaData.map((item, index) => {
           return (
-            <div className="qna_content">
+            <div className="qna_content" key={index}>
               <div className="Q" onClick={() => this.handleQna(index)}>
                 {item.q}
               </div>
@@ -45,7 +45,7 @@ class QnA extends Component {
               >
                 <ul>
                   {item.a.map((item, index) => (
-                    <li>{item}</li>
+                    <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>

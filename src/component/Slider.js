@@ -96,9 +96,9 @@ class Slider extends Component {
             <div className="content_wrap">
               <table
                 border="0"
-                cellpadding="0"
-                cellspacing="0"
-                class="tbl_type6"
+                cellPadding="0"
+                cellSpacing="0"
+                className="tbl_type6"
               >
                 <colgroup>
                   <col width="" />
@@ -220,8 +220,8 @@ class Slider extends Component {
                     <td>
                       <a href="tel:031-250-1383">031-250-1383</a>
                     </td>
-                    <th rowspan="2">화성오산</th>
-                    <td rowspan="2">
+                    <th rowSpan="2">화성오산</th>
+                    <td rowSpan="2">
                       <a href="tel:031-371-0667">031-371-0667(화성)</a>
                       <br />
                       <a href="tel:031-371-0673">031-371-0673(오산)</a>
@@ -238,12 +238,12 @@ class Slider extends Component {
                     <td>
                       <a href="tel:031-412-4563">031-412-4563</a>
                     </td>
-                    <th rowspan="2">
+                    <th rowSpan="2">
                       경기도
                       <br />
                       교육청
                     </th>
-                    <td rowspan="2">
+                    <td rowSpan="2">
                       <a href="tel:031-820-0902">031-820-0902</a>
                       <br />
                       <a href="tel:031-820-0908">031-820-0908</a>

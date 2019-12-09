@@ -30,10 +30,6 @@ class App extends Component {
     this.resize();
   }
 
-  componentWillUnmount() {
-    this.state.swiper.off("slideChange");
-  }
-
   resize() {
     let currentIsMobile = window.innerWidth < 880;
     if (currentIsMobile !== this.state.isMobile) {
