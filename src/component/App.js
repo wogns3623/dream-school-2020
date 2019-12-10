@@ -39,6 +39,7 @@ class App extends Component {
   }
   setSwiper = swiper => {
     swiper.on("slideChange", () => {
+      window.scrollTo(0, 0);
       this.setState({ currentTab: this.state.swiper.activeIndex });
     });
     this.setState({ swiper: swiper });

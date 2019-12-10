@@ -3,11 +3,11 @@ import Swiper from "react-id-swiper";
 import QnA from "component/QnA";
 import pageImg1 from "assets/images/page/main.png";
 import pageImg2 from "assets/images/page/info.png";
-import pageImg3_top from "assets/images/page/application.png";
-import pageImg3_bottom from "assets/images/page/numb.png";
-import pageImg4 from "assets/images/page/apptip.png";
-import pageImg5_top from "assets/images/page/explain.png";
-import pageImg6_top from "assets/images/page/numt.png";
+import pageImg4 from "assets/images/page/application.png";
+import pageImg5 from "assets/images/page/apptip.png";
+import pageImg6 from "assets/images/page/explain.png";
+import pageImg7_top from "assets/images/page/numt.png";
+import pageImg7_bottom from "assets/images/page/numb.png";
 import btnImg1 from "assets/images/page/app_.png";
 import btnImg2 from "assets/images/page/tip_.png";
 import btnImg3 from "assets/images/page/enter_.png";
@@ -39,6 +39,9 @@ class Slider extends Component {
         <div style={sliderWidth}>
           <div>
             <img src={pageImg1} alt="slide first page" />
+            <div className="btn_wrap">
+              <img src={btnImg1}></img>
+            </div>
           </div>
         </div>
 
@@ -57,25 +60,25 @@ class Slider extends Component {
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg3_top} alt="slide fourth page content" />
+            <img src={pageImg4} alt="slide fourth page content" />
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg4} alt="slide fifth page bottom" />
+            <img src={pageImg5} alt="slide fifth page content" />
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg5_top} alt="slide sixth page content" />
+            <img src={pageImg6} alt="slide sixth page content" />
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg6_top} alt="slide sixth page content" />
+            <img src={pageImg7_top} alt="slide seventh page top" />
             <div className="content_wrap">
               <table
                 border="0"
@@ -241,7 +244,7 @@ class Slider extends Component {
                 </tbody>
               </table>
             </div>
-            <img src={pageImg3_bottom} alt="slide sixth page bottom" />
+            <img src={pageImg7_bottom} alt="slide seventh page bottom" />
           </div>
         </div>
       </Swiper>
