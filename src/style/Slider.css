@@ -42,12 +42,12 @@
 .swiper-slide > div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 750px;
   margin: 0 auto;
-  background-color: #e8e500;
-  /* background-color: blue; */
   position: relative;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   position: fixed;

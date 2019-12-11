@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
 import QnA from "component/QnA";
+import pageBg from "assets/images/page/page_bg.jpg";
 import pageImg1 from "assets/images/page/main.png";
 import pageImg2 from "assets/images/page/info.png";
-import pageImg4 from "assets/images/page/application.png";
+import pageImg4 from "assets/images/page/application.jpg";
 import pageImg5 from "assets/images/page/apptip.png";
-import pageImg6 from "assets/images/page/explain.png";
+import pageImg6 from "assets/images/page/explain.jpg";
 import pageImg7_top from "assets/images/page/numt.png";
+import pageImg7_middle from "assets/images/page/nums.png";
 import pageImg7_bottom from "assets/images/page/numb.png";
 import btnImg1 from "assets/images/page/app_.png";
 import btnImg2 from "assets/images/page/tip_.png";
 import btnImg3 from "assets/images/page/enter_.png";
+import logo from "assets/images/common/2019_main_logo2.png";
 import "style/Slider.css";
 import "style/SlideItem.css";
 
@@ -38,48 +41,64 @@ class Slider extends Component {
       >
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg1} alt="slide first page" />
+            <img className="bgImg" src={pageImg1} alt="slide first page" />
             <div className="btn_wrap">
               <img src={btnImg1}></img>
+              <img src={btnImg2}></img>
             </div>
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg2} alt="slide second page" />
+            <img className="bgImg" src={pageImg2} alt="slide second page" />
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <h2>학생이 만들어가는 꿈의 학교</h2>
+            <img className="bgImg" src={pageBg} alt="slide second page" />
             <QnA></QnA>
+
+            {/* <img src={logo} /> */}
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg4} alt="slide fourth page content" />
+            <img className="bgImg" src={pageImg4} alt="slide fourth page" />
+
+            <img className="btn slideBtn" src={btnImg1}></img>
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg5} alt="slide fifth page content" />
+            <img className="bgImg" src={pageImg5} alt="slide fifth page" />
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg6} alt="slide sixth page content" />
+            <img className="bgImg" src={pageImg6} alt="slide sixth page" />
+
+            <img className="btn slideBtn" src={btnImg3}></img>
           </div>
         </div>
 
         <div style={sliderWidth}>
           <div>
-            <img src={pageImg7_top} alt="slide seventh page top" />
+            <img
+              className="bgImg"
+              src={pageImg7_top}
+              alt="slide seventh page top"
+            />
             <div className="content_wrap">
+              <img
+                className="bgImg"
+                src={pageImg7_middle}
+                alt="slide seventh page middle"
+              />
               <table
                 border="0"
                 cellPadding="0"
@@ -244,7 +263,11 @@ class Slider extends Component {
                 </tbody>
               </table>
             </div>
-            <img src={pageImg7_bottom} alt="slide seventh page bottom" />
+            <img
+              className="bgImg"
+              src={pageImg7_bottom}
+              alt="slide seventh page bottom"
+            />
           </div>
         </div>
       </Swiper>

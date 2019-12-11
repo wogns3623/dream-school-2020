@@ -1,0 +1,24 @@
+.qna_container {
+  position: absolute;
+  width: 87%;
+  top: 13.2%;
+  padding: 0 0 70px 0;
+  background-color: white;
+  border-radius: 68px;
+}
+
+.Q {
+  padding: 10px 20px;
+  border-bottom: solid 1px #ccc;
+}
+.A {
+  padding: 0 10px;
+  overflow: hidden;
+  transition-duration: 200ms;
+  height: 0px;
+  background-color: #f1f5f6;
+}
+.A.active > ul {
+  margin: 20px 0;
+  height: fit-content;
+}

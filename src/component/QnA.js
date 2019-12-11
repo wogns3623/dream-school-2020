@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import qnaData from "assets/data/qnaData.json";
 
+import "style/Qna.css";
+
 class QnA extends Component {
   state = {
     activeQ: null
@@ -34,6 +36,7 @@ class QnA extends Component {
   render() {
     return (
       <div className="qna_container">
+        <h1>꿈의학교 Q&A</h1>
         {qnaData.map((item, index) => {
           return (
             <div className="qna_content" key={index}>
