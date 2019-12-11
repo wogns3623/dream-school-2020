@@ -61,7 +61,10 @@ class App extends Component {
           menuList={this.state.tabList}
         ></Header>
         <main className="App">
-          <Slider setSwiper={this.setSwiper}></Slider>
+          <Slider
+            setSwiper={this.setSwiper}
+            handleTab={this.handleTab}
+          ></Slider>
         </main>
         <Footer isMobile={this.state.isMobile}></Footer>
       </>

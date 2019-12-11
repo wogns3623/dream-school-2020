@@ -43,8 +43,8 @@ class Slider extends Component {
           <div>
             <img className="bgImg" src={pageImg1} alt="slide first page" />
             <div className="btn_wrap">
-              <img src={btnImg1}></img>
-              <img src={btnImg2}></img>
+              <img src={btnImg1} />
+              <img src={btnImg2} onClick={() => this.props.handleTab(4)} />
             </div>
           </div>
         </div>
