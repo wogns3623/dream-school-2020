@@ -36,9 +36,6 @@ class QnA extends Component {
   render() {
     return (
       <div className="qna_container">
-        <h2>
-          <br></br>
-        </h2>
         {qnaData.map((item, index) => {
           return (
             <div className="qna_content" key={index}>

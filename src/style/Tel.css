@@ -1,0 +1,54 @@
+.Tel {
+  margin-top: 37%;
+  width: 79%;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0px;
+}
+.Tel > * {
+  line-height: initial;
+}
+.Tel thead {
+  font-size: 18px;
+}
+.Tel thead th {
+  background-color: #000846;
+  color: #fff;
+  height: 45px;
+}
+.Tel tbody {
+  font-size: 16px;
+}
+.Tel tbody th {
+  width: 20%;
+  background: #f6f6f6;
+  font-weight: 700;
+  border-bottom: 1px solid #d2d2d2;
+}
+.Tel tbody td {
+  width: 30%;
+  height: 45px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.Tel tbody td a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 880px) {
+  .Tel {
+    font-size: 2.4vw;
+  }
+  .Tel thead {
+    font-size: 1em;
+  }
+  .Tel thead th {
+    height: 6vw;
+  }
+  .Tel tbody {
+    font-size: 0.889em;
+  }
+  .Tel tbody td {
+    height: 6vw;
+  }
+}

@@ -1,16 +1,17 @@
 .qna_container {
-  position: absolute;
+  margin-top: 23%;
+  padding: 45px 0 60px 0;
   width: 87%;
-  top: 13.2%;
-  padding: 0 0 70px 0;
   background-color: white;
   border-radius: 68px;
+  font-size: 15px;
+  display: table;
 }
 
 .Q {
   padding: 10px 20px;
-  font-size: 15px;
-  font-style: bold;
+  font-size: 1em;
+  font-weight: 600;
   border-bottom: solid 1px #ccc;
 }
 .A {
@@ -18,10 +19,24 @@
   overflow: hidden;
   transition-duration: 200ms;
   height: 0px;
-  font-size: 15px;
+  font-size: 1em;
   background-color: #f1f5f6;
 }
 .A.active > ul {
   margin: 20px 0;
   height: fit-content;
+}
+
+@media screen and (max-width: 880px) {
+  .qna_container {
+    padding: 6vw 0 8vw 0;
+    font-size: 2vw;
+  }
+
+  .Q {
+    padding: 1.4vw 2.7vw;
+  }
+  .A {
+    padding: 0 1.4vw;
+  }
 }
