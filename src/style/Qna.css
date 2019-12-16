@@ -9,6 +9,8 @@
 
 .Q {
   padding: 10px 20px;
+  font-size: 15px;
+  font-style: bold;
   border-bottom: solid 1px #ccc;
 }
 .A {
@@ -16,6 +18,7 @@
   overflow: hidden;
   transition-duration: 200ms;
   height: 0px;
+  font-size: 15px;
   background-color: #f1f5f6;
 }
 .A.active > ul {

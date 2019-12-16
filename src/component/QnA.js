@@ -36,12 +36,14 @@ class QnA extends Component {
   render() {
     return (
       <div className="qna_container">
-        <h1>꿈의학교 Q&A</h1>
+        <h2>
+          <br></br>
+        </h2>
         {qnaData.map((item, index) => {
           return (
             <div className="qna_content" key={index}>
               <div className="Q" onClick={() => this.handleQna(index)}>
-                {item.q}
+                Q.{item.q}
               </div>
               <div
                 className={`A${this.state.activeQ === index ? " active" : ""}`}

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
 import QnA from "component/QnA";
-import pageBg from "assets/images/page/page_bg.jpg";
+import pageBg from "assets/images/page/page_bg.png";
 import pageImg1 from "assets/images/page/main.png";
 import pageImg2 from "assets/images/page/info.png";
-import pageImg4 from "assets/images/page/application.jpg";
+import pageImg4 from "assets/images/page/application.png";
 import pageImg5 from "assets/images/page/apptip.png";
-import pageImg6 from "assets/images/page/explain.jpg";
+import pageImg6 from "assets/images/page/explain.png";
 import pageImg7_top from "assets/images/page/numt.png";
-import pageImg7_middle from "assets/images/page/nums.png";
+import pageImg7_middle from "assets/images/page/tel.png";
 import pageImg7_bottom from "assets/images/page/numb.png";
 import btnImg1 from "assets/images/page/app_.png";
 import btnImg2 from "assets/images/page/tip_.png";
@@ -43,7 +43,9 @@ class Slider extends Component {
           <div>
             <img className="bgImg" src={pageImg1} alt="slide first page" />
             <div className="btn_wrap">
-              <img src={btnImg1} />
+              <a href="https://village.goe.go.kr/school/announcement/view/16">
+                <img src={btnImg1} />
+              </a>
               <img src={btnImg2} onClick={() => this.props.handleTab(4)} />
             </div>
           </div>
@@ -88,11 +90,11 @@ class Slider extends Component {
 
         <div style={sliderWidth}>
           <div>
-            <img
+            {/* <img
               className="bgImg"
               src={pageImg7_top}
               alt="slide seventh page top"
-            />
+            /> */}
             <div className="content_wrap">
               <img
                 className="bgImg"
@@ -263,11 +265,6 @@ class Slider extends Component {
                 </tbody>
               </table>
             </div>
-            <img
-              className="bgImg"
-              src={pageImg7_bottom}
-              alt="slide seventh page bottom"
-            />
           </div>
         </div>
       </Swiper>

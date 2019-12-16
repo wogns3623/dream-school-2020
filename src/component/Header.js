@@ -6,6 +6,7 @@ import menuBtn from "assets/images/common/menu_btn.png";
 import closeBtn from "assets/images/common/menu_btn2.png";
 import logo from "assets/images/common/logo.png";
 import "style/Header.css";
+import btnImg1 from "assets/images/page/app_.png";
 
 class Header extends Component {
   state = {
@@ -28,6 +29,14 @@ class Header extends Component {
             width="150px"
             onClick={() => this.props.handleTab(0)}
           ></img>
+          <div>
+            <a
+              className="apply_w"
+              href="https://village.goe.go.kr/school/announcement/view/16"
+            >
+              <img src={btnImg1} />
+            </a>
+          </div>
         </div>
         <div className="header_sns">
           <ShareBox
@@ -74,6 +83,12 @@ class Header extends Component {
             width="40px"
             onClick={() => this.props.handleTab(0)}
           ></img>
+          <a
+            className="apply"
+            href="https://village.goe.go.kr/school/announcement/view/16"
+          >
+            <img src={btnImg1} />
+          </a>
           <img
             className="btn menuBtn"
             src={menuBtn}
