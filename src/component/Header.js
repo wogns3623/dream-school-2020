@@ -10,10 +10,10 @@ import btnImg1 from "assets/images/page/app_.png";
 
 class Header extends Component {
   state = {
-    menuActive: false
+    menuActive: false,
   };
 
-  handleMenu = value => {
+  handleMenu = (value) => {
     if (this.props.isMobile) {
       this.setState({ menuActive: value });
     }
@@ -32,9 +32,9 @@ class Header extends Component {
           <div>
             <a
               className="apply_w"
-              href="https://village.goe.go.kr/school/announcement/view/16"
+              href="https://village.goe.go.kr/board/notice/view/1214"
             >
-              <img src={btnImg1} />
+              <img src={btnImg1} alt="꿈의학교 신청" />
             </a>
           </div>
         </div>
@@ -85,9 +85,9 @@ class Header extends Component {
           ></img>
           <a
             className="apply"
-            href="https://village.goe.go.kr/school/announcement/view/16"
+            href="https://village.goe.go.kr/board/notice/view/1214"
           >
-            <img src={btnImg1} />
+            <img src={btnImg1} alt="꿈의학교 신청" />
           </a>
           <img
             className="btn menuBtn"

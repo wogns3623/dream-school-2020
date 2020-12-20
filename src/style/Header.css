@@ -45,7 +45,7 @@ header {
   padding: 10px 0;
   border-right: 1.5px solid white;
   border-bottom: 1.5px solid white;
-  background-color: #262d62;
+  background-color: #ba2a5d;
   text-align: center;
   font-size: 13px;
   color: white;
@@ -54,7 +54,7 @@ header {
   border-right: none;
 }
 .menu_item.active {
-  background-color: #e8e500;
+  background-color: #f2e825;
   color: #000;
   font-weight: 700;
 }

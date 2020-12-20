@@ -20,16 +20,16 @@
 
 .btn_wrap {
   position: absolute;
-  top: 50%;
-  left: 60%;
-  width: 27.8%;
+  top: 55%;
+  left: 53%;
+  width: 41%;
 }
 .swiper-slide h1 {
   text-align: center;
 }
 
 .btn_wrap img {
-  margin-bottom: 30%;
+  margin-bottom: 10%;
   width: 100%;
 }
 

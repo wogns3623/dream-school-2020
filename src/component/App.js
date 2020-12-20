@@ -12,12 +12,12 @@ class App extends Component {
     tabList: [
       "HOME",
       "꿈의학교란?",
-      "꿈의학교 Q&A",
-      "신청 및 심사일정",
+      "꿈의학교 Q&A1",
+      "꿈의학교 Q&A2",
       "신청서 작성팁",
       "사업설명회 일정",
-      "지역교육청 연락처"
-    ]
+      "지역교육청 연락처",
+    ],
   };
 
   constructor() {
@@ -37,7 +37,7 @@ class App extends Component {
       this.setState({ isMobile: currentIsMobile });
     }
   }
-  setSwiper = swiper => {
+  setSwiper = (swiper) => {
     swiper.on("slideChange", () => {
       window.scrollTo(0, 0);
       this.setState({ currentTab: this.state.swiper.activeIndex });
@@ -45,7 +45,7 @@ class App extends Component {
     this.setState({ swiper: swiper });
   };
 
-  handleTab = index => {
+  handleTab = (index) => {
     if (this.state.swiper !== null) {
       this.state.swiper.slideTo(index);
     }

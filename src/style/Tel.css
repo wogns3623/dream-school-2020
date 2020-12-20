@@ -1,6 +1,6 @@
 .Tel {
-  margin-top: 37%;
-  width: 79%;
+  margin-top: 21%;
+  width: 78%;
   vertical-align: middle;
   text-align: center;
   line-height: 0px;
@@ -12,27 +12,30 @@
   font-size: 18px;
 }
 .Tel thead th {
-  background-color: #000846;
+  background-color: #3f3083;
   color: #fff;
-  height: 45px;
+  height: 40px;
+  border: 2px solid white;
 }
 .Tel tbody {
   font-size: 16px;
+  font-weight: bold;
 }
 .Tel tbody th {
   width: 20%;
-  background: #f6f6f6;
   font-weight: 700;
-  border-bottom: 1px solid #d2d2d2;
 }
 .Tel tbody td {
   width: 30%;
-  height: 45px;
-  border-bottom: 1px solid #e6e6e6;
+  height: 43px;
 }
 .Tel tbody td a {
   color: #000;
   text-decoration: none;
+}
+
+.Tel tbody.last_size_down tr:last-child th:last-of-type {
+  font-size: 11px;
 }
 
 @media screen and (max-width: 880px) {
@@ -43,12 +46,15 @@
     font-size: 1em;
   }
   .Tel thead th {
-    height: 6vw;
+    height: 5vw;
   }
   .Tel tbody {
     font-size: 0.889em;
   }
   .Tel tbody td {
-    height: 6vw;
+    height: 5.7vw;
+  }
+  .Tel tbody.last_size_down tr:last-child th:last-of-type {
+    font-size: 0.67em;
   }
 }

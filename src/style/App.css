@@ -1,7 +1,7 @@
 .App {
   display: flex;
   width: 100%;
-  margin: 0 auto 300px auto;
+  margin: 0 auto;
 }
 
 .tab_content {
@@ -11,7 +11,7 @@
   width: 750px;
   margin: 0 auto;
   background-color: #e8e500;
-  height: 1100px;
+  /* height: 1100px; */
 }
 
 @media screen and (max-width: 880px) {
