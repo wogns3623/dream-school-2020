@@ -23,14 +23,20 @@
   top: 55%;
   left: 53%;
   width: 41%;
+  display: flex;
+  flex-direction: column;
 }
 .swiper-slide h1 {
   text-align: center;
 }
 
-.btn_wrap img {
+.btn_wrap > a {
   margin-bottom: 10%;
+}
+
+.btn_wrap img {
   width: 100%;
+  cursor: pointer;
 }
 
 .wrap_wrap {
