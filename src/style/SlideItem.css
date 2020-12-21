@@ -47,6 +47,8 @@
   width: 78%;
   height: 70%;
   overflow-y: scroll;
+  display: flex;
+  justify-content: center;
 }
 
 .content_wrap::-webkit-scrollbar {
