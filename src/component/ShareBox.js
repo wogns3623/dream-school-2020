@@ -8,7 +8,7 @@ import kakaostoryImg from "assets/images/sns/kakaostory.jpg";
 import "style/ShareBox.css";
 
 class ShareBox extends Component {
-  state = { url: "http://dreamschool2020.cafe24.com" };
+  state = { url: "http://dreamschool2021.shop/" };
   componentDidMount() {
     window.Kakao.Link.createDefaultButton({
       container: "#kakao_" + this.props.kakao,
@@ -18,13 +18,13 @@ class ShareBox extends Component {
         imageUrl: "http://wzine.kr/dreamschool2019/images/sns/kakao_img.png",
         link: {
           mobileWebUrl: this.state.url,
-          webUrl: this.state.url
-        }
-      }
+          webUrl: this.state.url,
+        },
+      },
     });
   }
 
-  sns = type => {
+  sns = (type) => {
     let snsTitle = encodeURI("2020 학생이 만들어가는 꿈의학교");
     let snsUrl = this.state.url;
     let snsCopy = encodeURI("2020 학생이 만들어가는 꿈의학교");
@@ -51,7 +51,7 @@ class ShareBox extends Component {
     }
   };
 
-  openSnsWin = opensns => {
+  openSnsWin = (opensns) => {
     window.open(
       opensns,
       "",

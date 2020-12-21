@@ -1,6 +1,4 @@
 .Tel {
-  margin-top: 21%;
-  width: 78%;
   vertical-align: middle;
   text-align: center;
   line-height: 0px;
@@ -49,12 +47,12 @@
     height: 5vw;
   }
   .Tel tbody {
-    font-size: 0.889em;
+    font-size: 2.3vw;
   }
   .Tel tbody td {
     height: 5.7vw;
   }
   .Tel tbody.last_size_down tr:last-child th:last-of-type {
-    font-size: 0.67em;
+    font-size: 1.5vw;
   }
 }

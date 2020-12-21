@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Swiper from "react-id-swiper";
 import Tel from "component/Tel";
 
-import pageImg1 from "assets/images/page/main_with.jpg";
-// import pageImg1 from "assets/images/page/main.jpg";
+// import pageImg1 from "assets/images/page/main_with.jpg";
+import pageImg1 from "assets/images/page/main.jpg";
 import pageImg2 from "assets/images/page/info.jpg";
 import pageImg3 from "assets/images/page/qna1.jpg";
 import pageImg4 from "assets/images/page/qna2.jpg";
@@ -88,9 +88,10 @@ class Slider extends Component {
         <div style={sliderWidth}>
           <div>
             <img className="bgImg" src={pageImg7} alt="slide seventh page" />
-
-            <div className="content_wrap">
-              <Tel />
+            <div className="wrap_wrap">
+              <div className="content_wrap">
+                <Tel />
+              </div>
             </div>
           </div>
         </div>
