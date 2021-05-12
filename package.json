@@ -13,7 +13,7 @@
     "react-id-swiper": "^2.4.0",
     "react-scripts": "3.3.0",
     "react-tabs": "^3.0.0",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "cross-env NODE_PATH=src react-scripts start",
