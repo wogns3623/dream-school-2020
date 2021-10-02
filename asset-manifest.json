@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/dream-school-2020/static/css/main.0617904d.chunk.css",
+    "main.js": "/dream-school-2020/static/js/main.a21d0734.chunk.js",
+    "main.js.map": "/dream-school-2020/static/js/main.a21d0734.chunk.js.map",
+    "runtime-main.js": "/dream-school-2020/static/js/runtime-main.de645065.js",
+    "runtime-main.js.map": "/dream-school-2020/static/js/runtime-main.de645065.js.map",
+    "static/js/2.79a8fdfd.chunk.js": "/dream-school-2020/static/js/2.79a8fdfd.chunk.js",
+    "static/js/2.79a8fdfd.chunk.js.map": "/dream-school-2020/static/js/2.79a8fdfd.chunk.js.map",
+    "index.html": "/dream-school-2020/index.html",
+    "precache-manifest.73192346e54a77d572288300501de08f.js": "/dream-school-2020/precache-manifest.73192346e54a77d572288300501de08f.js",
+    "service-worker.js": "/dream-school-2020/service-worker.js",
+    "static/css/main.0617904d.chunk.css.map": "/dream-school-2020/static/css/main.0617904d.chunk.css.map",
+    "static/js/2.79a8fdfd.chunk.js.LICENSE": "/dream-school-2020/static/js/2.79a8fdfd.chunk.js.LICENSE",
+    "static/media/apptip.jpg": "/dream-school-2020/static/media/apptip.aa822366.jpg",
+    "static/media/index.css": "/dream-school-2020/static/media/bg.fd6d0368.jpg",
+    "static/media/explain.jpg": "/dream-school-2020/static/media/explain.2859759c.jpg",
+    "static/media/info.jpg": "/dream-school-2020/static/media/info.8a73a946.jpg",
+    "static/media/kakao.jpg": "/dream-school-2020/static/media/kakao.2efe6710.jpg",
+    "static/media/logo.png": "/dream-school-2020/static/media/logo.08e2104f.png",
+    "static/media/main.jpg": "/dream-school-2020/static/media/main.1022d6cb.jpg",
+    "static/media/SlideItem.css": "/dream-school-2020/static/media/page_bg.fb502d9b.jpg",
+    "static/media/qna1.jpg": "/dream-school-2020/static/media/qna1.ffbffef3.jpg",
+    "static/media/qna2.jpg": "/dream-school-2020/static/media/qna2.c0be889b.jpg",
+    "static/media/tel.jpg": "/dream-school-2020/static/media/tel.dbf034a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de645065.js",
+    "static/js/2.79a8fdfd.chunk.js",
+    "static/css/main.0617904d.chunk.css",
+    "static/js/main.a21d0734.chunk.js"
+  ]
+}
