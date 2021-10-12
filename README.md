@@ -1,3 +1,6 @@
+## Quick View
+You can see this project [HERE](https://wogns3623.github.io/dream-school-2020/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
